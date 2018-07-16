@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+  </head>
+  <body>
+
+      <div class="center container" id='app'>
+
+        <div id='headers'>
+          <!-- Title and subtitles! -->
+          <h1 id='title'>Play the Guessing Game!</h1>
+          <h2 id='subtitle'>Guess a number between 1-100!</h2>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input id="player-input" placeholder="#" maxlength="3">
+            <button class="btn btn-success" id="submit">Go!</button>
+          </div>
+
+          <div id='guesses'>
+            <!-- unordered list of guesses -->
+            <ul id="guess-list">
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button class="btn btn-warning" id="reset-btn">Reset</button>
+            <button class="btn btn-info" id="hint-btn">Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="center" id='footer'>
+        <div class="row">
+          <div class='col-sm-4'>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-sm-4'>
+            <h4>Project by Gayathri Subramanian</h4>
+          </div>
+
+          <div class='col-sm-4'>
+            <img src='grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+
+    <!--Javascript files here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="GuessingGame.js"></script>
+
+  </body>
+</html>
